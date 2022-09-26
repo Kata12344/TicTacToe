@@ -26,11 +26,11 @@ class JatekTer{
         //console.log(id);
             if (szamlalo % 2 == 0) {
                 this.#ElemLista[id].setSzimbol('<p>X</p>');
-                this.kiiratas(valami);
+                this.kiiratas();
                 //console.log(id)
             }else{
                 this.#ElemLista[id].setSzimbol('<p>O</p>');
-                this.kiiratas(valami);
+                this.kiiratas();
             }
             //console.log(szamlalo)
             szamlalo++;
