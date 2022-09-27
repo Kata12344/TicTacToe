@@ -26,11 +26,11 @@ class JatekTer{
         //console.log(id);
             if (szamlalo % 2 == 0) {
                 this.#ElemLista[id].setSzimbol('<p>X</p>');
-                this.kiiratas();
+                this.kiiratas("X");
                 //console.log(id)
             }else{
                 this.#ElemLista[id].setSzimbol('<p>O</p>');
-                this.kiiratas();
+                this.kiiratas("O");
             }
             //console.log(szamlalo)
             szamlalo++;
@@ -39,10 +39,10 @@ class JatekTer{
     }
 
     kiiratas(ertek){
-        if (ertek == "<p>X</p>") {
-            $('.infopanel').append("X játékos következik")
+        if (ertek === "X") {
+            $('.infopanel').html("O játékos következik")
         }else{
-            $('.infopanel').append("O játékos következik")
+            $('.infopanel').html("X játékos következik")
         }
     }
 
